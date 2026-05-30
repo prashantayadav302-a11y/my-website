@@ -325,6 +325,28 @@
         gap:15px;
       }
     }
+    .profile{
+  width:320px;
+  height:320px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid cyan;
+  box-shadow:0 0 40px cyan;
+  margin-bottom:30px;
+  animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{
+    transform:translateY(0px);
+  }
+  50%{
+    transform:translateY(-20px);
+  }
+  100%{
+    transform:translateY(0px);
+  }
+}
 
   </style>
 </head>
@@ -348,6 +370,8 @@
   <!-- Hero -->
 
   <section class="hero" id="home">
+    <img src="pk.png" class="profile">
+
 
     <h2>FUTURISTIC WEBSITE</h2>
 
